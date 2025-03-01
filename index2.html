@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrella 3D con Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link href="estilo2.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Estrella 3D con Bootstrap</h1>
+                <div class="scene">
+                    <div class="star" id="star">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                    </div>
+                </div>
+                
+                <div class="controls">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="colorPicker" class="form-label">Color de la estrella</label>
+                                <input type="color" class="form-control form-control-color" id="colorPicker" value="#ffd700">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="speedRange" class="form-label">Velocidad de rotación</label>
+                                <input type="range" class="form-range" min="1" max="20" id="speedRange" value="10">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="sizeRange" class="form-label">Tamaño</label>
+                                <input type="range" class="form-range" min="50" max="200" id="sizeRange" value="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="javascript2.js"></script>
+</body>
+</html>
